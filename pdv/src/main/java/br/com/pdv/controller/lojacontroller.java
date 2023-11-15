@@ -4,24 +4,23 @@ import javax.swing.Spring;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import br.com.pdv.repository.LojaRepository;
 
-	@Controller
+@Controller
 
 public class lojacontroller {
-	//criar uma instancia do nosso repositorio	
+	//criar uma instância do nosso repositorio	
 	@Autowired
 	private LojaRepository lojaRepository;
 	
-	@GetMapping({"/lojas"})//e o nome que eu  quiser colocar 
+	@GetMapping({"/lojas"})//é o nome que eu  quiser colocar 
 	public String home(ModelMap  model){
 		
-		model.addAttribute("loja", lojaRepository.findAll());
-			
-		return "loja/loja";
+		// o findAll lista todas lojas
+		model.addAttribute("lojas", lojaRepository.findAll());			
+		return "lojas";//é o nome do arquivo real
 	}
 }
