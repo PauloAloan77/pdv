@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://wwwthyneleaf.org">
+	<head>
+	<meta charset="ISO-8859-1">
+	<title>Eu vou ser um analista baby</title>	
+	</head>
+	<body>
+	Eu vou ser um analista baby!!!
+	<table class="table table-sm table-striped table-houver table-bordered">
+	<thead>
+		<tr>
+			<th>Item</tr>
+			<th>produto</th>
+			<th>venda</th>	
+		</tr>
+		</thead>
+		<tdody>
+			<tr th:each="item: ${itens}">
+				<td th:text="${IdItem}"></td>	
+				<td th:text="${Id_produtoFK}"></td>	
+				<td th:text="${Id_vendaFK}"></td>	
+		</tr>	
+		</tdody>
+	</table>
+	</body>
+</html>
