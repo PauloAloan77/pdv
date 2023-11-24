@@ -9,7 +9,7 @@ import br.com.pdv.repository.LojaRepository;
 
 @Controller
 
-public class lojacontroller {
+public class Lojacontroller {
 	//criar uma instância do nosso repositorio	
 	@Autowired
 	private LojaRepository lojaRepository;

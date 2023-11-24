@@ -9,16 +9,16 @@
 	<table class="table table-sm table-striped table-houver table-bordered">
 	<thead>
 		<tr>
-			<th>Item</tr>
-			<th>produto</th>
-			<th>venda</th>	
+			<th>Codigo</tr>
+			<th>Cliente</th>
+			<th>Venda</th>	
 		</tr>
 		</thead>
 		<tdody>
-			<tr th:each="item: ${item}">
-				<td th:text="${IdItem}"></td>	
-				<td th:text="${Id_produtoFK}"></td>	
-				<td th:text="${Id_vendaFK}"></td>	
+			<tr th:each="venda: ${venda}">
+				<td th:text="${venda.ven_codigo}"></td>	
+				<td th:text="${venda.cli_codigoFK}"></td>	
+				<td th:text="${venda.venda_data}"></td>	
 		</tr>	
 		</tdody>
 	</table>

@@ -8,7 +8,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 @Entity
-@Table(name = "Produto",schema = "pdv")
+@Table(name = "produto",schema = "pdv")
 public class ProdutoEntidade implements Serializable{
 
 	/**
